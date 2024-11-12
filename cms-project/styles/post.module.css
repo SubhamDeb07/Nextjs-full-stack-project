@@ -1,0 +1,73 @@
+.container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.message,
+.error {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.message {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.button {
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+.deleteButton {
+  margin-left: 10px;
+  background-color: #ff4d4d;
+}
+
+.deleteButton:hover {
+  background-color: #cc0000;
+}

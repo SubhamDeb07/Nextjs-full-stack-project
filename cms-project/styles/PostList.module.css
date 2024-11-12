@@ -1,0 +1,42 @@
+/* Container for the whole post list */
+.postListContainer {
+  padding: 20px;
+  max-width: 700px;
+}
+
+/* Each individual post item as a bullet point with an arrow */
+.postItem {
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+  position: relative;
+}
+
+/* Add arrow sign before each post item */
+.postItem::before {
+  content: "→"; /* Use an arrow symbol */
+  color: #0070f3; /* Match the hover color for consistency */
+  margin-right: 8px;
+  font-size: 1.2rem;
+  position: absolute;
+  left: -20px; /* Adjust this value as needed */
+  top: 50%;
+  transform: translateY(-50%); /* Center the arrow vertically */
+}
+
+/* Post title */
+.postTitle {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  display: inline; /* Ensures text is not wrapped in a block */
+}
+
+/* Post title hover effect */
+.postTitle:hover {
+  color: #0070f3; /* Add hover color effect */
+  text-decoration: underline; /* Add underline on hover */
+}

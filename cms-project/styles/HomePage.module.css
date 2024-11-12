@@ -1,0 +1,112 @@
+/* Container for the form */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Form elements spacing */
+.form-container > div {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* Styling for input and textarea */
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus effect on input fields */
+.input:focus,
+.textarea:focus {
+  border-color: #0070f3; /* Blue focus color */
+  outline: none;
+}
+
+/* Placeholder styling */
+.input::placeholder,
+.textarea::placeholder {
+  color: #888; /* Lighter color for placeholder */
+  font-style: italic;
+}
+
+/* Button Styling */
+/* Button Styling */
+.button {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color: #005bb5;
+}
+
+/* Message below form */
+.message {
+  margin-top: 20px;
+  color: green;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Pagination container */
+.pagination {
+  display: flex;
+  justify-content: center; /* Center pagination in the middle */
+  align-items: center;
+  margin-top: 20px; /* Add space above pagination */
+}
+
+/* Page number display */
+.pageNumber {
+  margin: 0 15px; /* Space between page buttons and page number */
+  font-size: 1rem;
+  color: #333; /* Dark text color */
+}
+
+/* Pagination button */
+.pageButton {
+  padding: 8px 16px; /* Comfortable padding */
+  margin: 0 5px; /* Space between buttons */
+  background-color: #f0f0f0; /* Light background */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Disabled button styling */
+.pageButton:disabled {
+  background-color: #e0e0e0; /* Gray background */
+  color: #999; /* Light text */
+  cursor: not-allowed;
+}
+
+/* Hover effect for buttons */
+.pageButton:not(:disabled):hover {
+  background-color: #0070f3; /* Blue hover color */
+  color: white; /* White text on hover */
+}
